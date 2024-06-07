@@ -9,6 +9,10 @@ Currently, two official plugins are available:
 
 
 docker build -t my-react-app .
+docker save -o my-react-app.tar my-react-app
+
+docker load -i my-react-app.tar
+
 docker run -p 3000:80 my-react-app
 
 
